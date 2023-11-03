@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+
+  header {
+    display: flex;
+    background-color: #222;
+    height: 90px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  button {
+    color: #fff;
+    background: #ff6a90;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  button:active {
+    color: #ff6a90;
+    background-image: linear-gradient(
+      to left,
+      rgb(106, 207, 255),
+      rgb(194, 90, 206)
+    );
+  }
+  
+  header button {
+    padding: 6px 22px;
+    border-radius: 5px;
+    margin-right: 65px;
+  }
+  
+  img {
+    height: 26px;
+    cursor: pointer;
+  }
+  
+  .line {
+    background-color: #ccc;
+    width: 1px;
+    height: 50px;
+  }
+  
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  a:active {
+    font-weight: 900;
+    text-decoration: underline;
+  }
+  
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-left: 66px;
+  }
+  
+ 
+  main {
+    background-image: url("img/bg.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-y: center;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+  }
+  
+  .maintext {
+    margin-top: 0%;
+    color: #fff;
+  }
+  
+  .maintext h1 {
+    font-size: 64px;
+    line-height: 80px;
+    font-weight: 700;
+  }
+  
+  .maintext p {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  
+  .maintext button {
+    margin-top: 60px;
+    padding: 12px 22px;
+    font-size: 25px;
+  }
+  
+  @media (max-width: 480px) {
+    header {
+      height: 60px;
+    }
+  
+    button {
+      padding: 3px 15px;
+    }
+  
+    header button {
+      margin-right: 5px;
+    }
+  
+    ul {
+      gap: 10px;
+    }
+  
+    .left {
+      gap: 10px;
+      margin-left: 5px;
+    }
+  
+    .maintext h1 {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+  
+    .maintext p {
+      font-size: 1rem;
+    }
+  
+    .maintext button {
+      margin-top: 20px;
+      padding: 8px 15px;
+      font-size: 1rem;
+    }
+  }
